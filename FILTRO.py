@@ -1,11 +1,13 @@
 import json
 controlador = True
-print("---Centro medico campus---")
-print("1.  AGREGAR CITAS MEDICAS")
-print("2. BUSCAR CITAS MEDICAS")
-print("3. MODIFICAR CITAS")
-print("4. ELIMINAR CITAS")
-print("5.SALIR")
+while controlador:
+    print("---Centro medico campus---")
+    print("1.  AGREGAR CITAS MEDICAS")
+    print("2. BUSCAR CITAS MEDICAS")
+    print("3. MODIFICAR CITAS")
+    print("4. ELIMINAR CITAS")
+    print("5.SALIR")
+    controlador = False
                      
 def agregarCita(citas):
     nombre = input("Ingrese el nombre del paciente: ")
@@ -85,7 +87,6 @@ elif (OPCION ==4):
     cancelCita("citas")
 
 elif (OPCION ==5):
-    guardarCitas("citas")
     print("Vuelve pronto.")
     
 else:
